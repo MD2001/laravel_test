@@ -3,10 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('home',function()
+Route::get('/about',function()
 {
-    return "hhhhhhhhhhhhhhhhhhhhhhhhhhh";
+    return view('about');
+});
+
+Route::get('/contact',function()
+{
+    return view('contact');
 });
